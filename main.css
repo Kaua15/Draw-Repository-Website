@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@100;200;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;      
+}
+
+.pag1 {
+    background: linear-gradient(#4A4A4A -10%, Transparent 110vh), url(media/fundoPortif.jpg);
+    backdrop-filter: blur(7.5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pag2 {
+    background: linear-gradient(#4A4A4A -10%, Transparent 110vh);
+}
+
+.page3-header {
+    height: 100px;
+    background-color: #000;
+}
+
+/* Header content */
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.home h1 {
+    font-size: 1.7em;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: 200;
+    display: inline-block;
+    margin-left: 3em;
+}
+
+nav ul a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: rgb(255, 255, 255, 0.1);
+    transition: all .5s;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: all .5s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+/* Main */
+
+.main {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    margin-top: -100px;
+}
+
+
+.main h1 {
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 96px;
+    letter-spacing: 0.2em;
+}
+
+.main p {
+    top: -100px;
+
+    font-weight: 200;
+    font-size: 1em;
+    line-height: 30px;
+}
+
+.main a {
+    top: -100px;
+    
+    display: block;
+    padding: 0.5em 2em;
+
+
+    background: #D9D9D9;
+    border-radius: 9999px;
+
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.main a:hover {
+    opacity: 0.8;
+    transition: .21s;
+}
+
+/* Galery Page */
+.obrasContent {
+    width: 90%;
+    margin: 0 auto;
+}
+.obras {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 1.5em;
+    justify-content: center;
+}
+
+.col {
+    border-radius: 50px;
+}
+
+.col .item {
+    margin-bottom: 1em;
+}
+
+
+.col .item img {
+    width: 100%;
+    border-radius: 0.5em;
+    opacity: 0.7;
+}
+
+.col .item h3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.col .item:hover, .linkSocial:hover {
+    opacity: 0.6;
+    transition: .21s;
+}
+
+.footer {
+    background-color: #0F0512;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: #fff;
+    font-weight: 200;
+}
+
+.linkSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.page3-main {
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+    margin: -70px 3em 0 3em;
+}
+
+.page3-main img {
+    height: 600px;
+}
+
+.line {
+    height: 1px;
+    width: 60%;
+    background-color: #000;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.aboutSection p {
+    width: 70%;
+    text-align: justify;
+    display: block;
+}
+
+.work {
+    font-weight: 100;
+}
+
+
+/* Page 4 */
+
+.page4-main {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2em;
+
+    margin: 1em;
+}
+
+.page4-title {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page4-title h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.page4-title p {
+    margin-top: 0.5em;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+
+.contactInformations-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.contactInformations-item h2 {
+    color: #3B0069;
+    font-weight: 400;
+}
+
+.contactInformations-item .img {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactInformations-item .img box-icon {
+    height: 42px;
+    width: 42px;
+}
+.contactInformations {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.page4-maincontent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6em;
+
+    height: 70%;
+    width: 100%;
+}
+
+.sendMessage {
+
+    height: 80%;
+    width: 31%;
+    background: #FF9D9D;
+    box-shadow: 0px 4px 5px #000000;
+    border-radius: 15px;
+    
+}
+
+.sendMessage form, .sendMessage form fieldset {
+    height: 100%;
+    border: none;
+}
+
+.sendMessage form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: #fff;
+    padding: 1.5em;
+    flex: 1;
+}
+
+.sendMessage form fieldset h2 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.sendMessage form fieldset h2 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.textbox {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5em;
+    resize: none;
+}
+
+.textbox:nth-child(4) {
+    background-color: #e08a8a;
+    border-radius: 5px;
+    padding: 1em;
+    height: 70px;
+
+}
+
+.textbox::placeholder {
+    color: #fff;
+}
+
+
+.btn {
+    background-color: #fff;
+    padding: 0.7em 2.4em;
+    align-self: flex-end;
+    border: none;
+    border-radius: 999px;
+    
+    font-weight: 400;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+
+/* Medias */
+
+
+@media only screen and (max-width: 1000px) {  
+    
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+        border-bottom: solid 1px rgb(255, 255, 255, 0.1);
+        height: 200px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        font-size: 0.9em;
+    }
+
+    .page3-header {
+        min-height: 200px;
+    }
+
+    .page3-main {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .aboutSection {
+        align-items: center;
+    }
+
+    .page4-main {
+        margin-top: 2.5em;
+    }
+    .page4-maincontent {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .sendMessage {
+        width: 80%;
+        height: 400px;
+        margin-bottom: 100px;
+        transition: 0.3s;
+    }
+
+    .page4-main {
+        height: auto;
+    }
+
+} 
+
+@media only screen and (max-width: 680px) {
+    .home {
+        text-align: center;
+    }
+    .main {
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
+
